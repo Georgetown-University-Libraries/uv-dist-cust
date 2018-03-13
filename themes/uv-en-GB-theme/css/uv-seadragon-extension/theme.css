@@ -2951,7 +2951,7 @@ input[type=range]:focus::-ms-fill-upper {
     display: none;
   }
   #app .leftPanel {
-    display: none;
+    display: block;
   }
   #app .rightPanel {
     display: none;
