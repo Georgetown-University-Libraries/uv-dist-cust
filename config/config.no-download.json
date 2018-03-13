@@ -1,0 +1,17 @@
+{
+  "options": { 
+    "pagingEnabled": false
+  },
+  "modules": {
+    "footerPanel": {
+       "options": {
+         "downloadEnabled": false
+       }
+    },
+    "contentLeftPanel":{
+      "options": {
+        "defaultToTreeEnabled": true
+      }
+    }
+  }
+}

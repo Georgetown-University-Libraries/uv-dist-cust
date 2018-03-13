@@ -1,0 +1,12 @@
+{
+  "options": {
+    "pagingEnabled": false
+  },
+  "modules": {
+    "contentLeftPanel":{
+      "options": {
+        "defaultToTreeEnabled": true
+      }
+    }
+  }
+}
