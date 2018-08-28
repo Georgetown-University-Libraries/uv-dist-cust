@@ -12,6 +12,11 @@
       "options": {
         "defaultToTreeEnabled": true
       }
+    },
+    "moreInfoRightPanel": {
+      "content": {
+        "logo": ""
+      }
     }
   }
 }
