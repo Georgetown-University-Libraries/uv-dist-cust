@@ -35,6 +35,17 @@
         app.setAttribute("style", "height:" + height + "px");
     </script>
 
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("div.rightPanel a,div.download a.btn-primary").on('click', function(e) {
+        var e = document.createEvent('HTMLEvents');
+            e.keyCode = 27;
+            e.initEvent(type, false, true);
+            document.dispatchEvent(e);;
+      });
+    });
+    </script>
+
     <!-- uncomment the following for GA tracking when embedded on third party sites -->
     <!--<script type="text/javascript" src="/examples/events.js"></script>-->
 
