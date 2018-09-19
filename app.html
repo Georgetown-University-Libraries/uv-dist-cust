@@ -26,6 +26,30 @@
           display: none!important;
         }
     </style>
+    <script type="text/javascript">
+    function bindEsc(){
+        var nodes = $("div.rightPanel a,div.download a.btn-primary");
+        nodes.on('click', function(e) {
+            var e = document.createEvent('HTMLEvents');
+            e.keyCode = 27;
+            e.initEvent("keydown", false, true);
+            document.dispatchEvent(e);
+        });
+    }
+
+    function resetEsc() {
+        bindEsc();
+        setTimeout(
+            function(){
+              resetEsc();
+            },
+            1000
+        );
+    }
+    $(function(){
+        resetEsc();
+    });
+    </script>
 </head>
 <body>
 
@@ -39,16 +63,6 @@
         app.setAttribute("style", "height:" + height + "px");
     </script>
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $("div.rightPanel a,div.download a.btn-primary").on('click', function(e) {
-        var e = document.createEvent('HTMLEvents');
-            e.keyCode = 27;
-            e.initEvent(type, false, true);
-            document.dispatchEvent(e);;
-      });
-    });
-    </script>
 
     <!-- uncomment the following for GA tracking when embedded on third party sites -->
     <!--<script type="text/javascript" src="/examples/events.js"></script>-->
