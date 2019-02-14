@@ -1,0 +1,3 @@
+[submodule "universalviewer"]
+	path = universalviewer
+	url = https://github.com/UniversalViewer/universalviewer
